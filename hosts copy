@@ -1,0 +1,4 @@
+jumper ansible_port=22 ansible_host=ec2-user@ec2-3-86-216-122.compute-1.amazonaws.com
+jumper ansible_port=2222 ansible_host=vagrant@127.0.0.1
+
+ 

@@ -1,0 +1,7 @@
+[localhost]
+vagrant@127.0.0.1:2200 ansible_connection=local
+
+[server2]
+vagrant@127.0.0.1:2201 ansible_connection=local
+
+ 

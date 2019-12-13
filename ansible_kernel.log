@@ -1,0 +1,1210 @@
+[2019-09-14 19:41:58,496] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:41:58,500] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:41:58,502] DEBUG [ansible_kernel.kernel.__init__:179] session <class 'jupyter_client.session.Session'> <jupyter_client.session.Session object at 0x109190c50>
+[2019-09-14 19:41:58,502] DEBUG [ansible_kernel.kernel.__init__:180] iopub_socket <class 'ipykernel.iostream.BackgroundSocket'> <ipykernel.iostream.BackgroundSocket object at 0x10b155790>
+[2019-09-14 19:41:58,559] DEBUG [ansible_kernel.kernel.__init__:228] /var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t
+[2019-09-14 19:41:58,668] INFO [ansible_kernel.kernel.do_inventory:566] inventory set to [all]
+localhost ansible_connection=local
+
+[2019-09-14 19:41:58,674] INFO [ansible_kernel.kernel.is_ansible_alive:1137] NOT STARTED
+[2019-09-14 19:41:58,675] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:41:58,677] INFO [ansible_kernel.kernel.start:114] thread.start
+[2019-09-14 19:41:58,677] DEBUG [ansible_kernel.kernel.process_widgets:728] widget_vars_file /var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t/project/widget_vars.yml
+[2019-09-14 19:41:58,678] INFO [ansible_kernel.kernel.start_helper:257] Started helper
+[2019-09-14 19:41:58,679] DEBUG [ansible_kernel.kernel.start_helper:275] vault_password? None
+[2019-09-14 19:41:58,679] INFO [ansible_kernel.kernel.start_helper:287] Wrote ansible.cfg
+[2019-09-14 19:41:58,681] DEBUG [ansible_kernel.kernel.do_execute_play:632] code_data {'gather_facts': False, 'hosts': 'localhost', 'name': 'default'}
+[2019-09-14 19:41:58,681] DEBUG [ansible_kernel.kernel.do_execute_play:633] code_data type: <class 'dict'>
+[2019-09-14 19:41:58,685] DEBUG [ansible_kernel.kernel.do_execute_play:659] - gather_facts: false
+  hosts: localhost
+  name: default
+  roles:
+  - ansible_kernel_helpers
+  tasks:
+  - pause_for_kernel:
+      host: 127.0.0.1
+      port: 53043
+      task_num: -1
+  - include_vars:
+      file: widget_vars.yml
+  - include_tasks: next_task0.yml
+
+[2019-09-14 19:41:58,687] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'550d3321387c5afe8b86a29c1335141c78863d0c989ec95fbf6dca6ef34bc265', b'{"msg_id":"e43396e9-fde9b94ab9ed60da35e4cd5c","msg_type":"stream","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:41:58.687442Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"\\n"}'] () {'copy': True}
+[2019-09-14 19:41:58,687] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:41:58,688] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'550d3321387c5afe8b86a29c1335141c78863d0c989ec95fbf6dca6ef34bc265', b'{"msg_id":"e43396e9-fde9b94ab9ed60da35e4cd5c","msg_type":"stream","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:41:58.687442Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"\\n"}'] () {'copy': True}
+[2019-09-14 19:41:58,688] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:41:58,688] INFO [ansible_kernel.kernel.start_ansible_playbook:681] runner starting
+[2019-09-14 19:41:58,690] INFO [ansible_kernel.kernel.start_ansible_playbook:692] runner started
+[2019-09-14 19:41:58,690] INFO [ansible_kernel.kernel.start_ansible_playbook:693] Runner status: starting
+[2019-09-14 19:41:58,690] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:41:58,690] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53043
+[2019-09-14 19:41:59,696] INFO [ansible_kernel.kernel.start_ansible_playbook:701] Queue Empty!
+[2019-09-14 19:41:59,696] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:41:59,696] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53043
+[2019-09-14 19:42:00,107] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 1,
+ 'created': '2019-09-14T17:42:00.105058',
+ 'end_line': 0,
+ 'event': 'playbook_on_start',
+ 'event_data': {'pid': 25279,
+                'playbook': 'playbook.yml',
+                'playbook_uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7'},
+ 'pid': 25279,
+ 'runner_ident': 'e9bacad7-1b57-418e-82c1-d7044aad21e1',
+ 'start_line': 0,
+ 'stdout': '',
+ 'uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7'}
+[2019-09-14 19:42:00,114] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 2,
+ 'created': '2019-09-14T17:42:00.112710',
+ 'end_line': 2,
+ 'event': 'playbook_on_play_start',
+ 'event_data': {'name': 'default',
+                'pattern': 'localhost',
+                'pid': 25279,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-5113-20fd-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7'},
+ 'parent_uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7',
+ 'pid': 25279,
+ 'runner_ident': 'e9bacad7-1b57-418e-82c1-d7044aad21e1',
+ 'start_line': 0,
+ 'stdout': '\r\n'
+           'PLAY [default] '
+           '*****************************************************************',
+ 'uuid': '48d705be-9e77-5113-20fd-000000000006'}
+[2019-09-14 19:42:00,153] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 3,
+ 'created': '2019-09-14T17:42:00.151330',
+ 'end_line': 4,
+ 'event': 'playbook_on_task_start',
+ 'event_data': {'is_conditional': False,
+                'name': 'pause_for_kernel',
+                'pid': 25279,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-5113-20fd-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7',
+                'task': 'pause_for_kernel',
+                'task_action': 'pause_for_kernel',
+                'task_args': '',
+                'task_path': '/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t/project/playbook.yml:7',
+                'task_uuid': '48d705be-9e77-5113-20fd-00000000000b'},
+ 'parent_uuid': '48d705be-9e77-5113-20fd-000000000006',
+ 'pid': 25279,
+ 'runner_ident': 'e9bacad7-1b57-418e-82c1-d7044aad21e1',
+ 'start_line': 2,
+ 'stdout': '\r\n'
+           'TASK [pause_for_kernel] '
+           '********************************************************',
+ 'uuid': '48d705be-9e77-5113-20fd-00000000000b'}
+[2019-09-14 19:42:00,153] DEBUG [ansible_kernel.kernel.runner_process_message:328] playbook_on_task_start
+[2019-09-14 19:42:00,153] INFO [ansible_kernel.kernel.start_ansible_playbook:703] StatusMessage(message=['TaskStart', {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-5113-20fd-00000000000b'}])
+[2019-09-14 19:42:00,154] INFO [ansible_kernel.kernel.process_message:398] message ['TaskStart', {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-5113-20fd-00000000000b'}]
+[2019-09-14 19:42:00,154] INFO [ansible_kernel.kernel.process_message:405] message_type TaskStart
+[2019-09-14 19:42:00,154] INFO [ansible_kernel.kernel.process_message:406] message_data {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-5113-20fd-00000000000b'}
+[2019-09-14 19:42:00,154] DEBUG [ansible_kernel.kernel.process_message:409] pause_for_kernel
+[2019-09-14 19:42:00,155] INFO [ansible_kernel.kernel.start_ansible_playbook:715] Bottom of runner loop
+[2019-09-14 19:42:00,155] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 4,
+ 'created': '2019-09-14T17:42:00.152548',
+ 'end_line': 4,
+ 'event': 'runner_on_start',
+ 'event_data': {'host': 'localhost',
+                'pid': 25279,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-5113-20fd-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': '223b9806-b450-4c2a-a507-5ef50d19aaa7',
+                'task': 'pause_for_kernel',
+                'task_action': 'pause_for_kernel',
+                'task_args': '',
+                'task_path': '/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t/project/playbook.yml:7',
+                'task_uuid': '48d705be-9e77-5113-20fd-00000000000b'},
+ 'parent_uuid': '48d705be-9e77-5113-20fd-00000000000b',
+ 'pid': 25279,
+ 'runner_ident': 'e9bacad7-1b57-418e-82c1-d7044aad21e1',
+ 'start_line': 4,
+ 'stdout': '',
+ 'uuid': '96a7f4f4-60e6-4a40-8ba6-fd784ef31da6'}
+[2019-09-14 19:42:00,156] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'3f2241da47babe07e275603f1e00558f57ff31f1705fcc5a0252601440b2d7e3', b'{"msg_id":"e3fa850d-7404786993fa501bc0451b55","msg_type":"stream","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:00.156469Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"{\'counter\': 4,\\n \'created\': \'2019-09-14T17:42:00.152548\',\\n \'end_line\': 4,\\n \'event\': \'runner_on_start\',\\n \'event_data\': {\'host\': \'localhost\',\\n                \'pid\': 25279,\\n                \'play\': \'default\',\\n                \'play_pattern\': \'localhost\',\\n                \'play_uuid\': \'48d705be-9e77-5113-20fd-000000000006\',\\n                \'playbook\': \'playbook.yml\',\\n                \'playbook_uuid\': \'223b9806-b450-4c2a-a507-5ef50d19aaa7\',\\n                \'task\': \'pause_for_kernel\',\\n                \'task_action\': \'pause_for_kernel\',\\n                \'task_args\': \'\',\\n                \'task_path\': \'/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t/project/playbook.yml:7\',\\n                \'task_uuid\': \'48d705be-9e77-5113-20fd-00000000000b\'},\\n \'parent_uuid\': \'48d705be-9e77-5113-20fd-00000000000b\',\\n \'pid\': 25279,\\n \'runner_ident\': \'e9bacad7-1b57-418e-82c1-d7044aad21e1\',\\n \'start_line\': 4,\\n \'stdout\': \'\',\\n \'uuid\': \'96a7f4f4-60e6-4a40-8ba6-fd784ef31da6\'}\\n"}'] () {'copy': True}
+[2019-09-14 19:42:00,157] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:00,157] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'3f2241da47babe07e275603f1e00558f57ff31f1705fcc5a0252601440b2d7e3', b'{"msg_id":"e3fa850d-7404786993fa501bc0451b55","msg_type":"stream","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:00.156469Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"{\'counter\': 4,\\n \'created\': \'2019-09-14T17:42:00.152548\',\\n \'end_line\': 4,\\n \'event\': \'runner_on_start\',\\n \'event_data\': {\'host\': \'localhost\',\\n                \'pid\': 25279,\\n                \'play\': \'default\',\\n                \'play_pattern\': \'localhost\',\\n                \'play_uuid\': \'48d705be-9e77-5113-20fd-000000000006\',\\n                \'playbook\': \'playbook.yml\',\\n                \'playbook_uuid\': \'223b9806-b450-4c2a-a507-5ef50d19aaa7\',\\n                \'task\': \'pause_for_kernel\',\\n                \'task_action\': \'pause_for_kernel\',\\n                \'task_args\': \'\',\\n                \'task_path\': \'/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook_4ow908t/project/playbook.yml:7\',\\n                \'task_uuid\': \'48d705be-9e77-5113-20fd-00000000000b\'},\\n \'parent_uuid\': \'48d705be-9e77-5113-20fd-00000000000b\',\\n \'pid\': 25279,\\n \'runner_ident\': \'e9bacad7-1b57-418e-82c1-d7044aad21e1\',\\n \'start_line\': 4,\\n \'stdout\': \'\',\\n \'uuid\': \'96a7f4f4-60e6-4a40-8ba6-fd784ef31da6\'}\\n"}'] () {'copy': True}
+[2019-09-14 19:42:00,157] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:00,172] INFO [ansible_kernel.kernel.recv_pause:131] completed [b'-1'] waiting...
+[2019-09-14 19:42:01,158] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:42:01,158] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53043
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.start_ansible_playbook:703] TaskCompletionMessage(task_num=-1)
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.start_ansible_playbook:708] msg.task_num -1 tasks_counter 0
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.start_ansible_playbook:717] Runner state is now running
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.start_ansible_playbook:720] done
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.do_execute_play:672] done
+[2019-09-14 19:42:01,159] INFO [ansible_kernel.kernel.__init__:239] Kernel init finished took 2.6579651832580566
+[2019-09-14 19:42:01,240] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'066089f288961c457db2b743f7d357b6d5f09aafbab8465bdc53af63a4317d08', b'{"msg_id":"c95143c3-32a2bea68a6bc7287111297f","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.240623Z","version":"5.3"}', b'{}', b'{}', b'{"execution_state":"starting"}'] () {'copy': True}
+[2019-09-14 19:42:01,240] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'066089f288961c457db2b743f7d357b6d5f09aafbab8465bdc53af63a4317d08', b'{"msg_id":"c95143c3-32a2bea68a6bc7287111297f","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.240623Z","version":"5.3"}', b'{}', b'{}', b'{"execution_state":"starting"}'] () {'copy': True}
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'066089f288961c457db2b743f7d357b6d5f09aafbab8465bdc53af63a4317d08'
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:01.240623Z',
+ 'msg_id': 'c95143c3-32a2bea68a6bc7287111297f',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,241] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {}
+[2019-09-14 19:42:01,242] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:01,242] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'starting'}
+[2019-09-14 19:42:01,242] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,244] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'c20e15530b61e2b40fe073ce2a0b9dd874db578974b7576392e02fb76ea6f267', b'{"msg_id":"31103146-678397d7ed27c3a2557985a4","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.244158Z","version":"5.3"}', b'{"msg_id":"31858d5a-0cfa928dd0efb7a115ef0d93","msg_type":"kernel_info_request","username":"Brian","session":"4672c4f6432745fcab5942e4b39bbbab","date":"2019-09-14T17:41:53.990240Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:01,244] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,244] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'c20e15530b61e2b40fe073ce2a0b9dd874db578974b7576392e02fb76ea6f267', b'{"msg_id":"31103146-678397d7ed27c3a2557985a4","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.244158Z","version":"5.3"}', b'{"msg_id":"31858d5a-0cfa928dd0efb7a115ef0d93","msg_type":"kernel_info_request","username":"Brian","session":"4672c4f6432745fcab5942e4b39bbbab","date":"2019-09-14T17:41:53.990240Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:01,244] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:01,244] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'c20e15530b61e2b40fe073ce2a0b9dd874db578974b7576392e02fb76ea6f267'
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:01.244158Z',
+ 'msg_id': '31103146-678397d7ed27c3a2557985a4',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:41:53.990240Z',
+ 'msg_id': '31858d5a-0cfa928dd0efb7a115ef0d93',
+ 'msg_type': 'kernel_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:01,245] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,732] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'7ce61c0f7233fcd04bb9203608d98a39ac46f358aa3f61875cfead24e6bc0461', b'{"msg_id":"bf4ca7e5-85dd3e39342771242e61ef2c","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.732224Z","version":"5.3"}', b'{"msg_id":"31858d5a-0cfa928dd0efb7a115ef0d93","msg_type":"kernel_info_request","username":"Brian","session":"4672c4f6432745fcab5942e4b39bbbab","date":"2019-09-14T17:41:53.990240Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:01,732] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'7ce61c0f7233fcd04bb9203608d98a39ac46f358aa3f61875cfead24e6bc0461', b'{"msg_id":"bf4ca7e5-85dd3e39342771242e61ef2c","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.732224Z","version":"5.3"}', b'{"msg_id":"31858d5a-0cfa928dd0efb7a115ef0d93","msg_type":"kernel_info_request","username":"Brian","session":"4672c4f6432745fcab5942e4b39bbbab","date":"2019-09-14T17:41:53.990240Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'7ce61c0f7233fcd04bb9203608d98a39ac46f358aa3f61875cfead24e6bc0461'
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:01.732224Z',
+ 'msg_id': 'bf4ca7e5-85dd3e39342771242e61ef2c',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:41:53.990240Z',
+ 'msg_id': '31858d5a-0cfa928dd0efb7a115ef0d93',
+ 'msg_type': 'kernel_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,733] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:01,734] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:01,734] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,761] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'8661d4825614d3007093984dbcb7432c8ca7305267d0d0cd72451698c1c4ae74', b'{"msg_id":"b8d8f606-e698d4dcd430f482b522c9e0","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.761201Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:01,762] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,762] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'8661d4825614d3007093984dbcb7432c8ca7305267d0d0cd72451698c1c4ae74', b'{"msg_id":"b8d8f606-e698d4dcd430f482b522c9e0","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.761201Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:01,762] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:01,762] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:01,762] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'8661d4825614d3007093984dbcb7432c8ca7305267d0d0cd72451698c1c4ae74'
+[2019-09-14 19:42:01,763] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:01.761201Z',
+ 'msg_id': 'b8d8f606-e698d4dcd430f482b522c9e0',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,763] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:01.760850Z',
+ 'msg_id': '5354141f6cc74067beb7269a50ea7245',
+ 'msg_type': 'execute_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:01,763] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:01,763] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:01,763] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'74b57ec7ba8743cdbd1bdd3ecf988d7878f5ef9f13f97cb650d2924ef29061ee', b'{"msg_id":"6d5f6039-23046c99748c110d68c4ef9c","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.763857Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"code":"ansible-playbook -K playbook.yml","execution_count":1}'] () {'copy': True}
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'74b57ec7ba8743cdbd1bdd3ecf988d7878f5ef9f13f97cb650d2924ef29061ee', b'{"msg_id":"6d5f6039-23046c99748c110d68c4ef9c","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:01.763857Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"code":"ansible-playbook -K playbook.yml","execution_count":1}'] () {'copy': True}
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input'
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:01,764] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'74b57ec7ba8743cdbd1bdd3ecf988d7878f5ef9f13f97cb650d2924ef29061ee'
+[2019-09-14 19:42:01,765] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:01.763857Z',
+ 'msg_id': '6d5f6039-23046c99748c110d68c4ef9c',
+ 'msg_type': 'execute_input',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:01,765] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:01.760850Z',
+ 'msg_id': '5354141f6cc74067beb7269a50ea7245',
+ 'msg_type': 'execute_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:01,766] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:01,766] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'code': 'ansible-playbook -K playbook.yml', 'execution_count': 1}
+[2019-09-14 19:42:01,766] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:01,766] DEBUG [ansible_kernel.kernel.do_execute:519] code 'ansible-playbook -K playbook.yml'
+[2019-09-14 19:42:01,766] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:42:01,767] DEBUG [ansible_kernel.kernel.do_execute_task:760] code_data ansible-playbook -K playbook.yml
+[2019-09-14 19:42:01,768] DEBUG [ansible_kernel.kernel.do_execute_task:761] code_data type: <class 'str'>
+[2019-09-14 19:42:01,768] DEBUG [ansible_kernel.kernel.get_module_doc:1123] command ansible-doc -t module playbook.yml
+[2019-09-14 19:42:02,553] DEBUG [ansible_kernel.kernel.get_module_doc:1128] exitcode 0
+[2019-09-14 19:42:02,553] DEBUG [ansible_kernel.kernel.get_module_doc:1130] output  [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod
+ules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-
+packages/ansible/modules
+
+[2019-09-14 19:42:02,553] DEBUG [root.do_execute_task:772] payload {'source': '', 'data': {'text/plain': ' [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\npackages/ansible/modules\n'}}
+[2019-09-14 19:42:02,554] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'dec25fd639f95cb8b6f4f83332ce0355854dedf7bfe437f10b5e86c653da4df2', b'{"msg_id":"b6893556-151a7962e0301ee77b449497","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.553911Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:42:02,554] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,554] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'dec25fd639f95cb8b6f4f83332ce0355854dedf7bfe437f10b5e86c653da4df2', b'{"msg_id":"b6893556-151a7962e0301ee77b449497","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.553911Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:42:02,554] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,558] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6b7635d05be4cc598290844df66cd3a9c006e3d878350f849d1484a11c3fe3d6', b'{"msg_id":"1485b1bf-524695b825350977849d5b99","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.558126Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,558] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,558] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6b7635d05be4cc598290844df66cd3a9c006e3d878350f849d1484a11c3fe3d6', b'{"msg_id":"1485b1bf-524695b825350977849d5b99","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.558126Z","version":"5.3"}', b'{"msg_id":"5354141f6cc74067beb7269a50ea7245","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:01.760850Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,559] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:02,559] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:02,559] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'6b7635d05be4cc598290844df66cd3a9c006e3d878350f849d1484a11c3fe3d6'
+[2019-09-14 19:42:02,560] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:02.558126Z',
+ 'msg_id': '1485b1bf-524695b825350977849d5b99',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:02,560] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:01.760850Z',
+ 'msg_id': '5354141f6cc74067beb7269a50ea7245',
+ 'msg_type': 'execute_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:02,560] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:02,560] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:02,561] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,563] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'e2763a0117736caf3884edb7d015704c4aa0698684616a2244fd8d72be2cb273', b'{"msg_id":"05104af0-b6e8b3a71c8df8556ad34fae","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.563520Z","version":"5.3"}', b'{"msg_id":"26e03b72c45947ed9fa7fe61e063be76","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:02.563057Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:02,564] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,564] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'e2763a0117736caf3884edb7d015704c4aa0698684616a2244fd8d72be2cb273', b'{"msg_id":"05104af0-b6e8b3a71c8df8556ad34fae","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.563520Z","version":"5.3"}', b'{"msg_id":"26e03b72c45947ed9fa7fe61e063be76","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:02.563057Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:02,565] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:02,565] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:02,566] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'e2763a0117736caf3884edb7d015704c4aa0698684616a2244fd8d72be2cb273'
+[2019-09-14 19:42:02,566] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:02.563520Z',
+ 'msg_id': '05104af0-b6e8b3a71c8df8556ad34fae',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:02,567] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:02.563057Z',
+ 'msg_id': '26e03b72c45947ed9fa7fe61e063be76',
+ 'msg_type': 'kernel_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:02,567] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:02,567] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:02,568] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,573] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6a5e723d45727795e793f2b88144863ac8c949163348c83ce3d4d56b86975a13', b'{"msg_id":"9cc7d7c2-b847632dc46403dd3c670381","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.573002Z","version":"5.3"}', b'{"msg_id":"26e03b72c45947ed9fa7fe61e063be76","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:02.563057Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,574] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,574] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6a5e723d45727795e793f2b88144863ac8c949163348c83ce3d4d56b86975a13', b'{"msg_id":"9cc7d7c2-b847632dc46403dd3c670381","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.573002Z","version":"5.3"}', b'{"msg_id":"26e03b72c45947ed9fa7fe61e063be76","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:02.563057Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,574] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:02,574] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:02,574] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'6a5e723d45727795e793f2b88144863ac8c949163348c83ce3d4d56b86975a13'
+[2019-09-14 19:42:02,575] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:02.573002Z',
+ 'msg_id': '9cc7d7c2-b847632dc46403dd3c670381',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:02,575] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:02.563057Z',
+ 'msg_id': '26e03b72c45947ed9fa7fe61e063be76',
+ 'msg_type': 'kernel_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:02,576] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:02,576] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:02,576] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'7fb05d2c26e0fc38c1e38431e59603eb1194dc37460127b02f2ea875262d696b', b'{"msg_id":"41c32b58-6c6c645504f39d261ef83c1e","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.580905Z","version":"5.3"}', b'{"msg_id":"810ad33aef8841158aff3defd2237a01","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:02.580377Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'7fb05d2c26e0fc38c1e38431e59603eb1194dc37460127b02f2ea875262d696b', b'{"msg_id":"41c32b58-6c6c645504f39d261ef83c1e","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.580905Z","version":"5.3"}', b'{"msg_id":"810ad33aef8841158aff3defd2237a01","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:02.580377Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:02,581] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'7fb05d2c26e0fc38c1e38431e59603eb1194dc37460127b02f2ea875262d696b'
+[2019-09-14 19:42:02,582] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:02.580905Z',
+ 'msg_id': '41c32b58-6c6c645504f39d261ef83c1e',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:02,582] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:02.580377Z',
+ 'msg_id': '810ad33aef8841158aff3defd2237a01',
+ 'msg_type': 'comm_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:02,582] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:02,582] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:02,582] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,588] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'8b1d9bf04f059dbc8cb65084560479247a555d29d98bc932b649a5f1154f8cca', b'{"msg_id":"c20fd26b-13e41e04a4bd07509ea9a318","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.588036Z","version":"5.3"}', b'{"msg_id":"810ad33aef8841158aff3defd2237a01","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:02.580377Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,588] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:02,589] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'8b1d9bf04f059dbc8cb65084560479247a555d29d98bc932b649a5f1154f8cca', b'{"msg_id":"c20fd26b-13e41e04a4bd07509ea9a318","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:02.588036Z","version":"5.3"}', b'{"msg_id":"810ad33aef8841158aff3defd2237a01","username":"username","session":"4672c4f6432745fcab5942e4b39bbbab","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:02.580377Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:02,592] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:02,592] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:02,592] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'8b1d9bf04f059dbc8cb65084560479247a555d29d98bc932b649a5f1154f8cca'
+[2019-09-14 19:42:02,594] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:02.588036Z',
+ 'msg_id': 'c20fd26b-13e41e04a4bd07509ea9a318',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:02,595] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:02.580377Z',
+ 'msg_id': '810ad33aef8841158aff3defd2237a01',
+ 'msg_type': 'comm_info_request',
+ 'session': '4672c4f6432745fcab5942e4b39bbbab',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:02,595] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:02,595] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:02,596] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:03,705] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:08,708] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:13,710] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:18,713] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:23,718] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:28,721] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:28,864] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'3cad288cf3657180ca8573213d01918647c6e09e00591f18d894a4b52b15bbcc', b'{"msg_id":"d6feec92-2c059f67e881f03ae23a0aba","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:28.864565Z","version":"5.3"}', b'{"msg_id":"0e4bbb4d3a0844108373aa914f9e5e18","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:28.864223Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:28,865] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:28,866] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'3cad288cf3657180ca8573213d01918647c6e09e00591f18d894a4b52b15bbcc', b'{"msg_id":"d6feec92-2c059f67e881f03ae23a0aba","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:28.864565Z","version":"5.3"}', b'{"msg_id":"0e4bbb4d3a0844108373aa914f9e5e18","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:28.864223Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:28,866] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:28,866] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:28,866] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'3cad288cf3657180ca8573213d01918647c6e09e00591f18d894a4b52b15bbcc'
+[2019-09-14 19:42:28,867] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:28.864565Z',
+ 'msg_id': 'd6feec92-2c059f67e881f03ae23a0aba',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:28,867] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:28.864223Z',
+ 'msg_id': '0e4bbb4d3a0844108373aa914f9e5e18',
+ 'msg_type': 'kernel_info_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:28,868] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:28,868] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:28,868] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:28,870] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'785a199de4e5bc9ad6e59ca161d8abdd007335319920d2796ec6d23f54ab22a6', b'{"msg_id":"e850e3e0-bc3fa6b363d3ce1eb901f150","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:28.870632Z","version":"5.3"}', b'{"msg_id":"0e4bbb4d3a0844108373aa914f9e5e18","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:28.864223Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:28,871] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:28,871] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'785a199de4e5bc9ad6e59ca161d8abdd007335319920d2796ec6d23f54ab22a6', b'{"msg_id":"e850e3e0-bc3fa6b363d3ce1eb901f150","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:28.870632Z","version":"5.3"}', b'{"msg_id":"0e4bbb4d3a0844108373aa914f9e5e18","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:42:28.864223Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:28,871] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:28,871] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:28,872] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'785a199de4e5bc9ad6e59ca161d8abdd007335319920d2796ec6d23f54ab22a6'
+[2019-09-14 19:42:28,872] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:28.870632Z',
+ 'msg_id': 'e850e3e0-bc3fa6b363d3ce1eb901f150',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:28,872] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:28.864223Z',
+ 'msg_id': '0e4bbb4d3a0844108373aa914f9e5e18',
+ 'msg_type': 'kernel_info_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:28,873] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:28,873] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:28,873] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:29,097] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'65199aeb758465bbae853d0c6aec10d9df1534c5653f16718953cd7a6b847c8e', b'{"msg_id":"b0621df7-b6392fd2c7f936e2b4a09ec9","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:29.097160Z","version":"5.3"}', b'{"msg_id":"3554e981eba347298b5fd20deb30ef4b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:29.096809Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:29,097] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:29,098] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'65199aeb758465bbae853d0c6aec10d9df1534c5653f16718953cd7a6b847c8e', b'{"msg_id":"b0621df7-b6392fd2c7f936e2b4a09ec9","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:29.097160Z","version":"5.3"}', b'{"msg_id":"3554e981eba347298b5fd20deb30ef4b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:29.096809Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:29,098] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:29,098] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:29,098] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'65199aeb758465bbae853d0c6aec10d9df1534c5653f16718953cd7a6b847c8e'
+[2019-09-14 19:42:29,098] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:29.097160Z',
+ 'msg_id': 'b0621df7-b6392fd2c7f936e2b4a09ec9',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:29,099] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:29.096809Z',
+ 'msg_id': '3554e981eba347298b5fd20deb30ef4b',
+ 'msg_type': 'comm_info_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:29,099] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:29,100] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:29,101] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:29,103] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'57f363947c119309af166e0b22815abb94d81d0d471675326c020f84383a77ef', b'{"msg_id":"9dd41c4d-9b68a3627650753258521279","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:29.103521Z","version":"5.3"}', b'{"msg_id":"3554e981eba347298b5fd20deb30ef4b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:29.096809Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:29,104] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:29,104] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'57f363947c119309af166e0b22815abb94d81d0d471675326c020f84383a77ef', b'{"msg_id":"9dd41c4d-9b68a3627650753258521279","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:29.103521Z","version":"5.3"}', b'{"msg_id":"3554e981eba347298b5fd20deb30ef4b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:42:29.096809Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:29,104] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:29,105] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:29,105] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'57f363947c119309af166e0b22815abb94d81d0d471675326c020f84383a77ef'
+[2019-09-14 19:42:29,105] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:29.103521Z',
+ 'msg_id': '9dd41c4d-9b68a3627650753258521279',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:29,106] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:29.096809Z',
+ 'msg_id': '3554e981eba347298b5fd20deb30ef4b',
+ 'msg_type': 'comm_info_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:29,106] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:29,106] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:29,106] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,229] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'9b801910977d0c2ff7c5571ef928117c8652ca407def25aa714620d31d2e4029', b'{"msg_id":"77ae913c-80e02d8c67dbcb101432e8e2","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.229402Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:31,229] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,230] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'9b801910977d0c2ff7c5571ef928117c8652ca407def25aa714620d31d2e4029', b'{"msg_id":"77ae913c-80e02d8c67dbcb101432e8e2","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.229402Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:42:31,230] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:31,230] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:31,230] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'9b801910977d0c2ff7c5571ef928117c8652ca407def25aa714620d31d2e4029'
+[2019-09-14 19:42:31,231] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:31.229402Z',
+ 'msg_id': '77ae913c-80e02d8c67dbcb101432e8e2',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:31,231] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:31.229190Z',
+ 'msg_id': '0fda3eea795a44f09253356911a5dc1b',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:31,231] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:31,231] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:42:31,232] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,232] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'c87c58ad41331267be54e2657ea19b8997b063ea732661fb726fef646e3f7d17', b'{"msg_id":"18ade745-2a5b767cb8de36c3fb6823ea","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.232373Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"code":"ansible-playbook -K playbook.yml","execution_count":2}'] () {'copy': True}
+[2019-09-14 19:42:31,233] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,233] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'c87c58ad41331267be54e2657ea19b8997b063ea732661fb726fef646e3f7d17', b'{"msg_id":"18ade745-2a5b767cb8de36c3fb6823ea","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.232373Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"code":"ansible-playbook -K playbook.yml","execution_count":2}'] () {'copy': True}
+[2019-09-14 19:42:31,233] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input'
+[2019-09-14 19:42:31,233] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:31,233] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'c87c58ad41331267be54e2657ea19b8997b063ea732661fb726fef646e3f7d17'
+[2019-09-14 19:42:31,234] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:31.232373Z',
+ 'msg_id': '18ade745-2a5b767cb8de36c3fb6823ea',
+ 'msg_type': 'execute_input',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:31,234] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:31.229190Z',
+ 'msg_id': '0fda3eea795a44f09253356911a5dc1b',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:31,234] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:31,235] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'code': 'ansible-playbook -K playbook.yml', 'execution_count': 2}
+[2019-09-14 19:42:31,235] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,235] DEBUG [ansible_kernel.kernel.do_execute:519] code 'ansible-playbook -K playbook.yml'
+[2019-09-14 19:42:31,235] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:42:31,236] DEBUG [ansible_kernel.kernel.do_execute_task:760] code_data ansible-playbook -K playbook.yml
+[2019-09-14 19:42:31,236] DEBUG [ansible_kernel.kernel.do_execute_task:761] code_data type: <class 'str'>
+[2019-09-14 19:42:31,236] DEBUG [ansible_kernel.kernel.get_module_doc:1123] command ansible-doc -t module playbook.yml
+[2019-09-14 19:42:31,923] DEBUG [ansible_kernel.kernel.get_module_doc:1128] exitcode 0
+[2019-09-14 19:42:31,923] DEBUG [ansible_kernel.kernel.get_module_doc:1130] output  [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod
+ules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-
+packages/ansible/modules
+
+[2019-09-14 19:42:31,923] DEBUG [root.do_execute_task:772] payload {'source': '', 'data': {'text/plain': ' [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\npackages/ansible/modules\n'}}
+[2019-09-14 19:42:31,924] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'dd75451ec4d4ac2d2c50a0e9c764c6810745353099938258d674a38811646068', b'{"msg_id":"9e7298ca-30c7963b41b78184c7756243","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.924075Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:42:31,924] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,924] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'dd75451ec4d4ac2d2c50a0e9c764c6810745353099938258d674a38811646068', b'{"msg_id":"9e7298ca-30c7963b41b78184c7756243","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.924075Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module playbook.yml not found in: /Users/Brian/.ansible/plugins/mod\\nules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:42:31,925] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,929] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'a44e1d0a9cd193453fc2ab7d167e936f51508ebc6ea008541ce015569b514c84', b'{"msg_id":"403c4de1-a0e55ced708dd165ec28e1a5","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.929642Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:31,930] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:31,930] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'a44e1d0a9cd193453fc2ab7d167e936f51508ebc6ea008541ce015569b514c84', b'{"msg_id":"403c4de1-a0e55ced708dd165ec28e1a5","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:42:31.929642Z","version":"5.3"}', b'{"msg_id":"0fda3eea795a44f09253356911a5dc1b","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:42:31.229190Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:42:31,930] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:42:31,930] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:42:31,930] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'a44e1d0a9cd193453fc2ab7d167e936f51508ebc6ea008541ce015569b514c84'
+[2019-09-14 19:42:31,931] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:42:31.929642Z',
+ 'msg_id': '403c4de1-a0e55ced708dd165ec28e1a5',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:42:31,931] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:42:31.229190Z',
+ 'msg_id': '0fda3eea795a44f09253356911a5dc1b',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:42:31,931] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:42:31,931] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:42:31,932] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:42:33,725] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:38,729] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:43,730] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:48,732] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:53,733] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:42:58,735] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:03,737] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:08,743] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:13,744] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:18,746] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:23,752] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:28,753] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:33,754] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:38,756] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:43,758] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:48,764] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:51,627] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'323dbf18f0962a811e2b15e5d1201bfde2046ec99a2667604b2a7ec905a096fd', b'{"msg_id":"74653966-7a543e7d6093625a89157f7a","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:51.627576Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:43:51,628] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:51,628] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'323dbf18f0962a811e2b15e5d1201bfde2046ec99a2667604b2a7ec905a096fd', b'{"msg_id":"74653966-7a543e7d6093625a89157f7a","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:51.627576Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:43:51,628] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:43:51,629] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:43:51,629] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'323dbf18f0962a811e2b15e5d1201bfde2046ec99a2667604b2a7ec905a096fd'
+[2019-09-14 19:43:51,629] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:43:51.627576Z',
+ 'msg_id': '74653966-7a543e7d6093625a89157f7a',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:43:51,630] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:43:51.626836Z',
+ 'msg_id': 'f44e6f88f9194f5e8272503cedf221ef',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:43:51,630] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:43:51,630] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:43:51,630] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:51,631] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'4e90a2dcc5d8e038310fe11e773103eb9b5466d244d2d835cbe9bd6d6f8e5c16', b'{"msg_id":"5c5966c0-0f0798964668f3527a516db1","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:51.631261Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"code":"ansible-playbook -K /playbook.yml","execution_count":3}'] () {'copy': True}
+[2019-09-14 19:43:51,631] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:51,631] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'4e90a2dcc5d8e038310fe11e773103eb9b5466d244d2d835cbe9bd6d6f8e5c16', b'{"msg_id":"5c5966c0-0f0798964668f3527a516db1","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:51.631261Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"code":"ansible-playbook -K /playbook.yml","execution_count":3}'] () {'copy': True}
+[2019-09-14 19:43:51,632] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input'
+[2019-09-14 19:43:51,632] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:43:51,632] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'4e90a2dcc5d8e038310fe11e773103eb9b5466d244d2d835cbe9bd6d6f8e5c16'
+[2019-09-14 19:43:51,632] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:43:51.631261Z',
+ 'msg_id': '5c5966c0-0f0798964668f3527a516db1',
+ 'msg_type': 'execute_input',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:43:51,632] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:43:51.626836Z',
+ 'msg_id': 'f44e6f88f9194f5e8272503cedf221ef',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:43:51,633] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:43:51,633] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'code': 'ansible-playbook -K /playbook.yml', 'execution_count': 3}
+[2019-09-14 19:43:51,633] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:51,634] DEBUG [ansible_kernel.kernel.do_execute:519] code 'ansible-playbook -K /playbook.yml'
+[2019-09-14 19:43:51,634] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:43:51,635] DEBUG [ansible_kernel.kernel.do_execute_task:760] code_data ansible-playbook -K /playbook.yml
+[2019-09-14 19:43:51,636] DEBUG [ansible_kernel.kernel.do_execute_task:761] code_data type: <class 'str'>
+[2019-09-14 19:43:51,636] DEBUG [ansible_kernel.kernel.get_module_doc:1123] command ansible-doc -t module /playbook.yml
+[2019-09-14 19:43:52,248] DEBUG [ansible_kernel.kernel.get_module_doc:1128] exitcode 0
+[2019-09-14 19:43:52,249] DEBUG [ansible_kernel.kernel.get_module_doc:1130] output  [WARNING]: module /playbook.yml not found in: /Users/Brian/.ansible/plugins/mo
+dules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-
+packages/ansible/modules
+
+[2019-09-14 19:43:52,249] DEBUG [root.do_execute_task:772] payload {'source': '', 'data': {'text/plain': ' [WARNING]: module /playbook.yml not found in: /Users/Brian/.ansible/plugins/mo\ndules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\npackages/ansible/modules\n'}}
+[2019-09-14 19:43:52,250] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'b0c8d0ba55747ca688b885b809a38df4249e2752296c9c5c8ab0bb0c0f16305b', b'{"msg_id":"df39fccc-d119cdb8268f02035a919733","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:52.249918Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module /playbook.yml not found in: /Users/Brian/.ansible/plugins/mo\\ndules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:43:52,250] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:52,250] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'b0c8d0ba55747ca688b885b809a38df4249e2752296c9c5c8ab0bb0c0f16305b', b'{"msg_id":"df39fccc-d119cdb8268f02035a919733","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:52.249918Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module /playbook.yml not found in: /Users/Brian/.ansible/plugins/mo\\ndules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:43:52,250] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:52,254] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'b79d43deead256dd8b198f1053dc6b8a8100d8f2877540a622c7132b0e032db9', b'{"msg_id":"0672c039-38dec92a89b1f1241b42345b","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:52.254357Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:43:52,254] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:52,255] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'b79d43deead256dd8b198f1053dc6b8a8100d8f2877540a622c7132b0e032db9', b'{"msg_id":"0672c039-38dec92a89b1f1241b42345b","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:43:52.254357Z","version":"5.3"}', b'{"msg_id":"f44e6f88f9194f5e8272503cedf221ef","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:43:51.626836Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:43:52,255] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:43:52,255] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:43:52,255] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'b79d43deead256dd8b198f1053dc6b8a8100d8f2877540a622c7132b0e032db9'
+[2019-09-14 19:43:52,256] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:43:52.254357Z',
+ 'msg_id': '0672c039-38dec92a89b1f1241b42345b',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:43:52,256] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:43:51.626836Z',
+ 'msg_id': 'f44e6f88f9194f5e8272503cedf221ef',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:43:52,256] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:43:52,257] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:43:52,257] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:43:53,767] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:43:58,769] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:03,771] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:08,774] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:13,776] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:18,777] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:23,778] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:28,784] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:33,785] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:38,791] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:43,795] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:48,797] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:53,798] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:44:58,799] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:03,800] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:08,783] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'e12a1fe662231f778a399fa626050f5e71b13bde56da517698eaa9e1348f2167', b'{"msg_id":"982008e6-c5910556c4f9fee8e4034a63","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:08.783494Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:45:08,783] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:08,784] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'e12a1fe662231f778a399fa626050f5e71b13bde56da517698eaa9e1348f2167', b'{"msg_id":"982008e6-c5910556c4f9fee8e4034a63","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:08.783494Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:45:08,784] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:45:08,784] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:45:08,784] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'e12a1fe662231f778a399fa626050f5e71b13bde56da517698eaa9e1348f2167'
+[2019-09-14 19:45:08,785] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:45:08.783494Z',
+ 'msg_id': '982008e6-c5910556c4f9fee8e4034a63',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:45:08,785] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:45:08.783177Z',
+ 'msg_id': '023e86dabba145aa8f89e57cbe1e3020',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:45:08,785] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:45:08,785] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:45:08,786] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:08,786] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'9d61a283961325bf23531e56c7650af55fdbb704368342c34ca14eb4c46b817c', b'{"msg_id":"693c2b5b-56e0d0627609d51aea3e062d","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:08.786465Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"code":"[all]\\nlocalhost","execution_count":4}'] () {'copy': True}
+[2019-09-14 19:45:08,786] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:08,787] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input', b'<IDS|MSG>', b'9d61a283961325bf23531e56c7650af55fdbb704368342c34ca14eb4c46b817c', b'{"msg_id":"693c2b5b-56e0d0627609d51aea3e062d","msg_type":"execute_input","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:08.786465Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"code":"[all]\\nlocalhost","execution_count":4}'] () {'copy': True}
+[2019-09-14 19:45:08,787] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.execute_input'
+[2019-09-14 19:45:08,787] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:45:08,787] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'9d61a283961325bf23531e56c7650af55fdbb704368342c34ca14eb4c46b817c'
+[2019-09-14 19:45:08,787] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:45:08.786465Z',
+ 'msg_id': '693c2b5b-56e0d0627609d51aea3e062d',
+ 'msg_type': 'execute_input',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:45:08,788] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:45:08.783177Z',
+ 'msg_id': '023e86dabba145aa8f89e57cbe1e3020',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:45:08,788] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:45:08,788] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'code': '[all]\nlocalhost', 'execution_count': 4}
+[2019-09-14 19:45:08,788] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:08,788] DEBUG [ansible_kernel.kernel.do_execute:519] code '[all]\nlocalhost'
+[2019-09-14 19:45:08,789] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:45:08,790] DEBUG [ansible_kernel.kernel.do_execute_task:760] code_data [all]
+localhost
+[2019-09-14 19:45:08,790] DEBUG [ansible_kernel.kernel.do_execute_task:761] code_data type: <class 'str'>
+[2019-09-14 19:45:08,790] DEBUG [ansible_kernel.kernel.get_module_doc:1123] command ansible-doc -t module localhost
+[2019-09-14 19:45:08,802] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:09,459] DEBUG [ansible_kernel.kernel.get_module_doc:1128] exitcode 0
+[2019-09-14 19:45:09,459] DEBUG [ansible_kernel.kernel.get_module_doc:1130] output  [WARNING]: module localhost not found in: /Users/Brian/.ansible/plugins/module
+s:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-
+packages/ansible/modules
+
+[2019-09-14 19:45:09,460] DEBUG [root.do_execute_task:772] payload {'source': '', 'data': {'text/plain': ' [WARNING]: module localhost not found in: /Users/Brian/.ansible/plugins/module\ns:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\npackages/ansible/modules\n'}}
+[2019-09-14 19:45:09,460] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'557a3c8e2d4a73ad1c2092cd77b35bbd95e1cd3a3cd3ac65524503c5a319b1ba', b'{"msg_id":"25e71b39-6272a2b37e54b229e3a300e3","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:09.460317Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module localhost not found in: /Users/Brian/.ansible/plugins/module\\ns:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:45:09,460] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:09,460] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'557a3c8e2d4a73ad1c2092cd77b35bbd95e1cd3a3cd3ac65524503c5a319b1ba', b'{"msg_id":"25e71b39-6272a2b37e54b229e3a300e3","msg_type":"display_data","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:09.460317Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"source":"","data":{"text/plain":" [WARNING]: module localhost not found in: /Users/Brian/.ansible/plugins/module\\ns:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.7/site-\\npackages/ansible/modules\\n"}}'] () {'copy': True}
+[2019-09-14 19:45:09,461] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:09,465] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6b7d79472ddc8f8b4cd54ff4a6dbe2d855ed8af39ba9b7b4047c0548c35b53e3', b'{"msg_id":"79e12c5d-b23d251d4157bc1689dff6d2","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:09.464952Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:45:09,465] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:09,465] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'6b7d79472ddc8f8b4cd54ff4a6dbe2d855ed8af39ba9b7b4047c0548c35b53e3', b'{"msg_id":"79e12c5d-b23d251d4157bc1689dff6d2","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:45:09.464952Z","version":"5.3"}', b'{"msg_id":"023e86dabba145aa8f89e57cbe1e3020","username":"username","session":"12890787ff5a492bad5a42799ef493b3","msg_type":"execute_request","version":"5.2","date":"2019-09-14T17:45:08.783177Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:45:09,465] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:45:09,465] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:45:09,466] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'6b7d79472ddc8f8b4cd54ff4a6dbe2d855ed8af39ba9b7b4047c0548c35b53e3'
+[2019-09-14 19:45:09,466] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:45:09.464952Z',
+ 'msg_id': '79e12c5d-b23d251d4157bc1689dff6d2',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:45:09,466] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:45:08.783177Z',
+ 'msg_id': '023e86dabba145aa8f89e57cbe1e3020',
+ 'msg_type': 'execute_request',
+ 'session': '12890787ff5a492bad5a42799ef493b3',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:45:09,467] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:45:09,467] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:45:09,467] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:45:13,808] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:18,809] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:23,810] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:28,812] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:33,816] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:38,819] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:43,824] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:48,828] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:53,831] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:45:58,837] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:03,838] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:08,841] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:13,843] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:18,844] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:23,850] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:28,852] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:33,856] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:38,858] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:43,859] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:48,861] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:53,867] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:46:58,867] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:03,868] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:08,869] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:13,870] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:18,876] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:23,878] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:28,883] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:31,669] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'ae644feb8366f4ea388fe01789ed03a6bc4242046168070e70c52423564f2e9a', b'{"msg_id":"db73151e-38731bd56ccf839231ab0db6","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.669041Z","version":"5.3"}', b'{"msg_id":"6df3401621dd4b2b853866d2ff4fbaa2","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:47:31.668361Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:47:31,669] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,670] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'ae644feb8366f4ea388fe01789ed03a6bc4242046168070e70c52423564f2e9a', b'{"msg_id":"db73151e-38731bd56ccf839231ab0db6","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.669041Z","version":"5.3"}', b'{"msg_id":"6df3401621dd4b2b853866d2ff4fbaa2","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:47:31.668361Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:47:31,670] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:47:31,670] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:47:31,670] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'ae644feb8366f4ea388fe01789ed03a6bc4242046168070e70c52423564f2e9a'
+[2019-09-14 19:47:31,671] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:47:31.669041Z',
+ 'msg_id': 'db73151e-38731bd56ccf839231ab0db6',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:47:31,671] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:47:31.668361Z',
+ 'msg_id': '6df3401621dd4b2b853866d2ff4fbaa2',
+ 'msg_type': 'kernel_info_request',
+ 'session': '5cb05231fc1b4fb189f2d2d68cc6af5f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:47:31,671] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:47:31,671] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:47:31,671] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,673] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'35470a6c563ba381181e1984e43141b5c31e41397b5d7a125e1ac16bd0c59580', b'{"msg_id":"9e22a34e-e86e2fd699f31d779b3fd3b3","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.673519Z","version":"5.3"}', b'{"msg_id":"6df3401621dd4b2b853866d2ff4fbaa2","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:47:31.668361Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:47:31,674] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,674] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'35470a6c563ba381181e1984e43141b5c31e41397b5d7a125e1ac16bd0c59580', b'{"msg_id":"9e22a34e-e86e2fd699f31d779b3fd3b3","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.673519Z","version":"5.3"}', b'{"msg_id":"6df3401621dd4b2b853866d2ff4fbaa2","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:47:31.668361Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:47:31,674] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:47:31,674] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:47:31,675] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'35470a6c563ba381181e1984e43141b5c31e41397b5d7a125e1ac16bd0c59580'
+[2019-09-14 19:47:31,675] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:47:31.673519Z',
+ 'msg_id': '9e22a34e-e86e2fd699f31d779b3fd3b3',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:47:31,675] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:47:31.668361Z',
+ 'msg_id': '6df3401621dd4b2b853866d2ff4fbaa2',
+ 'msg_type': 'kernel_info_request',
+ 'session': '5cb05231fc1b4fb189f2d2d68cc6af5f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:47:31,676] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:47:31,676] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:47:31,676] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,943] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'98584e263c4a7598070ac5112dfe745feaa8a940ae614de5db17b209ba9b2ccf', b'{"msg_id":"e9f08453-55a5e8ef3e1504e6c6a4daa0","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.942970Z","version":"5.3"}', b'{"msg_id":"41bf609ae3fe42659d92549471be7d4a","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:47:31.942681Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:47:31,943] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,943] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'98584e263c4a7598070ac5112dfe745feaa8a940ae614de5db17b209ba9b2ccf', b'{"msg_id":"e9f08453-55a5e8ef3e1504e6c6a4daa0","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.942970Z","version":"5.3"}', b'{"msg_id":"41bf609ae3fe42659d92549471be7d4a","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:47:31.942681Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:47:31,944] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:47:31,944] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:47:31,944] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'98584e263c4a7598070ac5112dfe745feaa8a940ae614de5db17b209ba9b2ccf'
+[2019-09-14 19:47:31,945] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:47:31.942970Z',
+ 'msg_id': 'e9f08453-55a5e8ef3e1504e6c6a4daa0',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:47:31,945] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:47:31.942681Z',
+ 'msg_id': '41bf609ae3fe42659d92549471be7d4a',
+ 'msg_type': 'comm_info_request',
+ 'session': '5cb05231fc1b4fb189f2d2d68cc6af5f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:47:31,945] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:47:31,945] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:47:31,945] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,947] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'06bb4acfc2b0f19a1eb119ee75347d9cca10d983fb849f92c8697662697b8a1c', b'{"msg_id":"8e99f367-0ff678ee7440365dfac27516","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.947211Z","version":"5.3"}', b'{"msg_id":"41bf609ae3fe42659d92549471be7d4a","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:47:31.942681Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:47:31,947] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:31,947] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status', b'<IDS|MSG>', b'06bb4acfc2b0f19a1eb119ee75347d9cca10d983fb849f92c8697662697b8a1c', b'{"msg_id":"8e99f367-0ff678ee7440365dfac27516","msg_type":"status","username":"Brian","session":"c686e718-9d22ac9f49fc651e52e5290e","date":"2019-09-14T17:47:31.947211Z","version":"5.3"}', b'{"msg_id":"41bf609ae3fe42659d92549471be7d4a","username":"username","session":"5cb05231fc1b4fb189f2d2d68cc6af5f","msg_type":"comm_info_request","version":"5.2","date":"2019-09-14T17:47:31.942681Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:47:31,947] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.2bb5c03d-1ccd-4156-b3d2-c605b3ad3978.status'
+[2019-09-14 19:47:31,949] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:47:31,949] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'06bb4acfc2b0f19a1eb119ee75347d9cca10d983fb849f92c8697662697b8a1c'
+[2019-09-14 19:47:31,949] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:47:31.947211Z',
+ 'msg_id': '8e99f367-0ff678ee7440365dfac27516',
+ 'msg_type': 'status',
+ 'session': 'c686e718-9d22ac9f49fc651e52e5290e',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:47:31,949] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:47:31.942681Z',
+ 'msg_id': '41bf609ae3fe42659d92549471be7d4a',
+ 'msg_type': 'comm_info_request',
+ 'session': '5cb05231fc1b4fb189f2d2d68cc6af5f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:47:31,949] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:47:31,950] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:47:31,950] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:47:33,887] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:38,889] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:43,890] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:48,891] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:53,893] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:47:58,895] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:03,897] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:08,899] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:13,902] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:18,904] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:23,905] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:28,908] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:33,909] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:38,914] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:43,916] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:48,920] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:53,923] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:48:58,929] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:03,931] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:08,933] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:11,079] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:49:11,091] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:49:11,095] DEBUG [ansible_kernel.kernel.__init__:179] session <class 'jupyter_client.session.Session'> <jupyter_client.session.Session object at 0x10e0efcd0>
+[2019-09-14 19:49:11,095] DEBUG [ansible_kernel.kernel.__init__:180] iopub_socket <class 'ipykernel.iostream.BackgroundSocket'> <ipykernel.iostream.BackgroundSocket object at 0x1100b7ad0>
+[2019-09-14 19:49:11,145] DEBUG [ansible_kernel.kernel.__init__:228] /var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha
+[2019-09-14 19:49:11,187] INFO [ansible_kernel.kernel.do_inventory:566] inventory set to [all]
+localhost ansible_connection=local
+
+[2019-09-14 19:49:11,189] INFO [ansible_kernel.kernel.is_ansible_alive:1137] NOT STARTED
+[2019-09-14 19:49:11,190] DEBUG [asyncio.__init__:53] Using selector: KqueueSelector
+[2019-09-14 19:49:11,191] INFO [ansible_kernel.kernel.start:114] thread.start
+[2019-09-14 19:49:11,191] DEBUG [ansible_kernel.kernel.process_widgets:728] widget_vars_file /var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha/project/widget_vars.yml
+[2019-09-14 19:49:11,192] INFO [ansible_kernel.kernel.start_helper:257] Started helper
+[2019-09-14 19:49:11,193] DEBUG [ansible_kernel.kernel.start_helper:275] vault_password? None
+[2019-09-14 19:49:11,193] INFO [ansible_kernel.kernel.start_helper:287] Wrote ansible.cfg
+[2019-09-14 19:49:11,194] DEBUG [ansible_kernel.kernel.do_execute_play:632] code_data {'gather_facts': False, 'hosts': 'localhost', 'name': 'default'}
+[2019-09-14 19:49:11,194] DEBUG [ansible_kernel.kernel.do_execute_play:633] code_data type: <class 'dict'>
+[2019-09-14 19:49:11,198] DEBUG [ansible_kernel.kernel.do_execute_play:659] - gather_facts: false
+  hosts: localhost
+  name: default
+  roles:
+  - ansible_kernel_helpers
+  tasks:
+  - pause_for_kernel:
+      host: 127.0.0.1
+      port: 53297
+      task_num: -1
+  - include_vars:
+      file: widget_vars.yml
+  - include_tasks: next_task0.yml
+
+[2019-09-14 19:49:11,200] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'1f24736a8c47bec4e49a11ae1bffe75bb7fa6e84ceb73da4ccababecad0d7ad0', b'{"msg_id":"42038e51-729257ad22e8da3d7af2e57f","msg_type":"stream","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:11.200226Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"\\n"}'] () {'copy': True}
+[2019-09-14 19:49:11,200] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:11,200] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'1f24736a8c47bec4e49a11ae1bffe75bb7fa6e84ceb73da4ccababecad0d7ad0', b'{"msg_id":"42038e51-729257ad22e8da3d7af2e57f","msg_type":"stream","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:11.200226Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"\\n"}'] () {'copy': True}
+[2019-09-14 19:49:11,200] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:11,201] INFO [ansible_kernel.kernel.start_ansible_playbook:681] runner starting
+[2019-09-14 19:49:11,202] INFO [ansible_kernel.kernel.start_ansible_playbook:692] runner started
+[2019-09-14 19:49:11,203] INFO [ansible_kernel.kernel.start_ansible_playbook:693] Runner status: starting
+[2019-09-14 19:49:11,203] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:49:11,203] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53297
+[2019-09-14 19:49:12,204] INFO [ansible_kernel.kernel.start_ansible_playbook:701] Queue Empty!
+[2019-09-14 19:49:12,205] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:49:12,205] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53297
+[2019-09-14 19:49:12,267] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 1,
+ 'created': '2019-09-14T17:49:12.255766',
+ 'end_line': 0,
+ 'event': 'playbook_on_start',
+ 'event_data': {'pid': 25565,
+                'playbook': 'playbook.yml',
+                'playbook_uuid': 'cac02649-bc26-4614-813f-fdfe4566d586'},
+ 'pid': 25565,
+ 'runner_ident': 'bac0bfaf-e2d0-4101-967b-8e787a09a4a1',
+ 'start_line': 0,
+ 'stdout': '',
+ 'uuid': 'cac02649-bc26-4614-813f-fdfe4566d586'}
+[2019-09-14 19:49:12,277] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 2,
+ 'created': '2019-09-14T17:49:12.275396',
+ 'end_line': 2,
+ 'event': 'playbook_on_play_start',
+ 'event_data': {'name': 'default',
+                'pattern': 'localhost',
+                'pid': 25565,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-4f17-83ba-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': 'cac02649-bc26-4614-813f-fdfe4566d586'},
+ 'parent_uuid': 'cac02649-bc26-4614-813f-fdfe4566d586',
+ 'pid': 25565,
+ 'runner_ident': 'bac0bfaf-e2d0-4101-967b-8e787a09a4a1',
+ 'start_line': 0,
+ 'stdout': '\r\n'
+           'PLAY [default] '
+           '*****************************************************************',
+ 'uuid': '48d705be-9e77-4f17-83ba-000000000006'}
+[2019-09-14 19:49:12,314] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 3,
+ 'created': '2019-09-14T17:49:12.312785',
+ 'end_line': 4,
+ 'event': 'playbook_on_task_start',
+ 'event_data': {'is_conditional': False,
+                'name': 'pause_for_kernel',
+                'pid': 25565,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-4f17-83ba-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': 'cac02649-bc26-4614-813f-fdfe4566d586',
+                'task': 'pause_for_kernel',
+                'task_action': 'pause_for_kernel',
+                'task_args': '',
+                'task_path': '/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha/project/playbook.yml:7',
+                'task_uuid': '48d705be-9e77-4f17-83ba-00000000000b'},
+ 'parent_uuid': '48d705be-9e77-4f17-83ba-000000000006',
+ 'pid': 25565,
+ 'runner_ident': 'bac0bfaf-e2d0-4101-967b-8e787a09a4a1',
+ 'start_line': 2,
+ 'stdout': '\r\n'
+           'TASK [pause_for_kernel] '
+           '********************************************************',
+ 'uuid': '48d705be-9e77-4f17-83ba-00000000000b'}
+[2019-09-14 19:49:12,314] DEBUG [ansible_kernel.kernel.runner_process_message:328] playbook_on_task_start
+[2019-09-14 19:49:12,315] INFO [ansible_kernel.kernel.start_ansible_playbook:703] StatusMessage(message=['TaskStart', {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-4f17-83ba-00000000000b'}])
+[2019-09-14 19:49:12,315] INFO [ansible_kernel.kernel.process_message:398] message ['TaskStart', {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-4f17-83ba-00000000000b'}]
+[2019-09-14 19:49:12,315] INFO [ansible_kernel.kernel.process_message:405] message_type TaskStart
+[2019-09-14 19:49:12,315] INFO [ansible_kernel.kernel.process_message:406] message_data {'task_name': 'pause_for_kernel', 'role_name': None, 'task_arg': '', 'task_id': '48d705be-9e77-4f17-83ba-00000000000b'}
+[2019-09-14 19:49:12,315] DEBUG [ansible_kernel.kernel.process_message:409] pause_for_kernel
+[2019-09-14 19:49:12,316] INFO [ansible_kernel.kernel.start_ansible_playbook:715] Bottom of runner loop
+[2019-09-14 19:49:12,317] INFO [ansible_kernel.kernel.runner_process_message:306] runner message:
+{'counter': 4,
+ 'created': '2019-09-14T17:49:12.313955',
+ 'end_line': 4,
+ 'event': 'runner_on_start',
+ 'event_data': {'host': 'localhost',
+                'pid': 25565,
+                'play': 'default',
+                'play_pattern': 'localhost',
+                'play_uuid': '48d705be-9e77-4f17-83ba-000000000006',
+                'playbook': 'playbook.yml',
+                'playbook_uuid': 'cac02649-bc26-4614-813f-fdfe4566d586',
+                'task': 'pause_for_kernel',
+                'task_action': 'pause_for_kernel',
+                'task_args': '',
+                'task_path': '/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha/project/playbook.yml:7',
+                'task_uuid': '48d705be-9e77-4f17-83ba-00000000000b'},
+ 'parent_uuid': '48d705be-9e77-4f17-83ba-00000000000b',
+ 'pid': 25565,
+ 'runner_ident': 'bac0bfaf-e2d0-4101-967b-8e787a09a4a1',
+ 'start_line': 4,
+ 'stdout': '',
+ 'uuid': '55829cde-2dae-4a95-8c16-9bcf80f8c04d'}
+[2019-09-14 19:49:12,318] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'<IDS|MSG>', b'b32465043b11193bce038ecc5d6452f6e4575eac6437d10c95884aebcc56b6c5', b'{"msg_id":"f9646ccc-711de5b5dd004d467816146c","msg_type":"stream","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:12.318414Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"{\'counter\': 4,\\n \'created\': \'2019-09-14T17:49:12.313955\',\\n \'end_line\': 4,\\n \'event\': \'runner_on_start\',\\n \'event_data\': {\'host\': \'localhost\',\\n                \'pid\': 25565,\\n                \'play\': \'default\',\\n                \'play_pattern\': \'localhost\',\\n                \'play_uuid\': \'48d705be-9e77-4f17-83ba-000000000006\',\\n                \'playbook\': \'playbook.yml\',\\n                \'playbook_uuid\': \'cac02649-bc26-4614-813f-fdfe4566d586\',\\n                \'task\': \'pause_for_kernel\',\\n                \'task_action\': \'pause_for_kernel\',\\n                \'task_args\': \'\',\\n                \'task_path\': \'/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha/project/playbook.yml:7\',\\n                \'task_uuid\': \'48d705be-9e77-4f17-83ba-00000000000b\'},\\n \'parent_uuid\': \'48d705be-9e77-4f17-83ba-00000000000b\',\\n \'pid\': 25565,\\n \'runner_ident\': \'bac0bfaf-e2d0-4101-967b-8e787a09a4a1\',\\n \'start_line\': 4,\\n \'stdout\': \'\',\\n \'uuid\': \'55829cde-2dae-4a95-8c16-9bcf80f8c04d\'}\\n"}'] () {'copy': True}
+[2019-09-14 19:49:12,319] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:12,319] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 6 [b'<IDS|MSG>', b'b32465043b11193bce038ecc5d6452f6e4575eac6437d10c95884aebcc56b6c5', b'{"msg_id":"f9646ccc-711de5b5dd004d467816146c","msg_type":"stream","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:12.318414Z","version":"5.3"}', b'{}', b'{}', b'{"name":"stdout","text":"{\'counter\': 4,\\n \'created\': \'2019-09-14T17:49:12.313955\',\\n \'end_line\': 4,\\n \'event\': \'runner_on_start\',\\n \'event_data\': {\'host\': \'localhost\',\\n                \'pid\': 25565,\\n                \'play\': \'default\',\\n                \'play_pattern\': \'localhost\',\\n                \'play_uuid\': \'48d705be-9e77-4f17-83ba-000000000006\',\\n                \'playbook\': \'playbook.yml\',\\n                \'playbook_uuid\': \'cac02649-bc26-4614-813f-fdfe4566d586\',\\n                \'task\': \'pause_for_kernel\',\\n                \'task_action\': \'pause_for_kernel\',\\n                \'task_args\': \'\',\\n                \'task_path\': \'/private/var/folders/6q/80tj919n7l9d0ggxp8zxrdhw0000gp/T/ansible_kernel_playbook4qb3iiha/project/playbook.yml:7\',\\n                \'task_uuid\': \'48d705be-9e77-4f17-83ba-00000000000b\'},\\n \'parent_uuid\': \'48d705be-9e77-4f17-83ba-00000000000b\',\\n \'pid\': 25565,\\n \'runner_ident\': \'bac0bfaf-e2d0-4101-967b-8e787a09a4a1\',\\n \'start_line\': 4,\\n \'stdout\': \'\',\\n \'uuid\': \'55829cde-2dae-4a95-8c16-9bcf80f8c04d\'}\\n"}'] () {'copy': True}
+[2019-09-14 19:49:12,319] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:12,334] INFO [ansible_kernel.kernel.recv_pause:131] completed [b'-1'] waiting...
+[2019-09-14 19:49:13,317] INFO [ansible_kernel.kernel.start_ansible_playbook:695] In runner loop
+[2019-09-14 19:49:13,317] INFO [ansible_kernel.kernel.start_ansible_playbook:698] getting message 53297
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.start_ansible_playbook:703] TaskCompletionMessage(task_num=-1)
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.start_ansible_playbook:708] msg.task_num -1 tasks_counter 0
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.start_ansible_playbook:717] Runner state is now running
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.start_ansible_playbook:720] done
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.do_execute_play:672] done
+[2019-09-14 19:49:13,318] INFO [ansible_kernel.kernel.__init__:239] Kernel init finished took 2.2252378463745117
+[2019-09-14 19:49:13,364] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'd459874014c6a544a1019128ea20c10aa9f65f11b483043768a4bd893e09ef43', b'{"msg_id":"9b7c25f5-a0a81129b119ca39f6ec5b47","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.363984Z","version":"5.3"}', b'{}', b'{}', b'{"execution_state":"starting"}'] () {'copy': True}
+[2019-09-14 19:49:13,364] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,365] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'd459874014c6a544a1019128ea20c10aa9f65f11b483043768a4bd893e09ef43', b'{"msg_id":"9b7c25f5-a0a81129b119ca39f6ec5b47","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.363984Z","version":"5.3"}', b'{}', b'{}', b'{"execution_state":"starting"}'] () {'copy': True}
+[2019-09-14 19:49:13,365] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:13,365] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:13,365] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'd459874014c6a544a1019128ea20c10aa9f65f11b483043768a4bd893e09ef43'
+[2019-09-14 19:49:13,366] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:13.363984Z',
+ 'msg_id': '9b7c25f5-a0a81129b119ca39f6ec5b47',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,366] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {}
+[2019-09-14 19:49:13,366] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:13,366] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'starting'}
+[2019-09-14 19:49:13,366] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,368] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'bd92e8f2f3df259dbcd96a455890af0e8307d9ac99a433fb4d72e13cc695aa38', b'{"msg_id":"1885d733-7ff82b19de7f30179757c391","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.368660Z","version":"5.3"}', b'{"msg_id":"2c65f2f4-c30791f1adb7ef1d4af20e32","msg_type":"kernel_info_request","username":"Brian","session":"92f937efdf664e899ea36074a98c119f","date":"2019-09-14T17:49:07.319812Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:13,369] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,369] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'bd92e8f2f3df259dbcd96a455890af0e8307d9ac99a433fb4d72e13cc695aa38', b'{"msg_id":"1885d733-7ff82b19de7f30179757c391","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.368660Z","version":"5.3"}', b'{"msg_id":"2c65f2f4-c30791f1adb7ef1d4af20e32","msg_type":"kernel_info_request","username":"Brian","session":"92f937efdf664e899ea36074a98c119f","date":"2019-09-14T17:49:07.319812Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:13,369] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:13,369] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:13,369] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'bd92e8f2f3df259dbcd96a455890af0e8307d9ac99a433fb4d72e13cc695aa38'
+[2019-09-14 19:49:13,370] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:13.368660Z',
+ 'msg_id': '1885d733-7ff82b19de7f30179757c391',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,370] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:07.319812Z',
+ 'msg_id': '2c65f2f4-c30791f1adb7ef1d4af20e32',
+ 'msg_type': 'kernel_info_request',
+ 'session': '92f937efdf664e899ea36074a98c119f',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,370] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:13,370] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:49:13,370] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,845] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'953ab687d3ce712a6540c38c99994c08ee5d401ef0abf5df36352ec3ce6e8c37', b'{"msg_id":"37ac7b5e-beb4897b47ec58c29a455e7c","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.845125Z","version":"5.3"}', b'{"msg_id":"2c65f2f4-c30791f1adb7ef1d4af20e32","msg_type":"kernel_info_request","username":"Brian","session":"92f937efdf664e899ea36074a98c119f","date":"2019-09-14T17:49:07.319812Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:13,845] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,846] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'953ab687d3ce712a6540c38c99994c08ee5d401ef0abf5df36352ec3ce6e8c37', b'{"msg_id":"37ac7b5e-beb4897b47ec58c29a455e7c","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.845125Z","version":"5.3"}', b'{"msg_id":"2c65f2f4-c30791f1adb7ef1d4af20e32","msg_type":"kernel_info_request","username":"Brian","session":"92f937efdf664e899ea36074a98c119f","date":"2019-09-14T17:49:07.319812Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:13,846] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:13,846] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:13,846] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'953ab687d3ce712a6540c38c99994c08ee5d401ef0abf5df36352ec3ce6e8c37'
+[2019-09-14 19:49:13,846] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:13.845125Z',
+ 'msg_id': '37ac7b5e-beb4897b47ec58c29a455e7c',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,847] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:07.319812Z',
+ 'msg_id': '2c65f2f4-c30791f1adb7ef1d4af20e32',
+ 'msg_type': 'kernel_info_request',
+ 'session': '92f937efdf664e899ea36074a98c119f',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,847] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:13,847] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:49:13,847] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,855] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'4f4ab89ad9f74fac0f710ddc3d65d03c4dff9cfcd2c5fa02fb54218b9fa67956', b'{"msg_id":"471ada6a-cae031d9e02b626da63209cc","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.855366Z","version":"5.3"}', b'{"msg_id":"8b424758c0c2494682682f490ab3846f","username":"username","session":"92f937efdf664e899ea36074a98c119f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:49:13.854970Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:13,855] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,856] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'4f4ab89ad9f74fac0f710ddc3d65d03c4dff9cfcd2c5fa02fb54218b9fa67956', b'{"msg_id":"471ada6a-cae031d9e02b626da63209cc","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.855366Z","version":"5.3"}', b'{"msg_id":"8b424758c0c2494682682f490ab3846f","username":"username","session":"92f937efdf664e899ea36074a98c119f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:49:13.854970Z"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:13,856] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:13,856] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:13,856] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'4f4ab89ad9f74fac0f710ddc3d65d03c4dff9cfcd2c5fa02fb54218b9fa67956'
+[2019-09-14 19:49:13,857] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:13.855366Z',
+ 'msg_id': '471ada6a-cae031d9e02b626da63209cc',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,857] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:13.854970Z',
+ 'msg_id': '8b424758c0c2494682682f490ab3846f',
+ 'msg_type': 'kernel_info_request',
+ 'session': '92f937efdf664e899ea36074a98c119f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:49:13,857] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:13,858] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:49:13,858] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,860] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'333ce30a6a118457e4591addf747880af0f2f1f0e58dbe58e93dc0b131586762', b'{"msg_id":"2357072e-122e3e180f3a5fa873947596","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.860597Z","version":"5.3"}', b'{"msg_id":"8b424758c0c2494682682f490ab3846f","username":"username","session":"92f937efdf664e899ea36074a98c119f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:49:13.854970Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:13,861] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,861] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'333ce30a6a118457e4591addf747880af0f2f1f0e58dbe58e93dc0b131586762', b'{"msg_id":"2357072e-122e3e180f3a5fa873947596","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:13.860597Z","version":"5.3"}', b'{"msg_id":"8b424758c0c2494682682f490ab3846f","username":"username","session":"92f937efdf664e899ea36074a98c119f","msg_type":"kernel_info_request","version":"5.2","date":"2019-09-14T17:49:13.854970Z"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:13,862] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:13,862] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:13,862] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'333ce30a6a118457e4591addf747880af0f2f1f0e58dbe58e93dc0b131586762'
+[2019-09-14 19:49:13,863] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:13.860597Z',
+ 'msg_id': '2357072e-122e3e180f3a5fa873947596',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:13,863] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:13.854970Z',
+ 'msg_id': '8b424758c0c2494682682f490ab3846f',
+ 'msg_type': 'kernel_info_request',
+ 'session': '92f937efdf664e899ea36074a98c119f',
+ 'username': 'username',
+ 'version': '5.2'}
+[2019-09-14 19:49:13,864] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:13,865] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:49:13,866] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:13,934] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:16,215] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:18,935] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:21,217] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:23,937] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:26,218] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:28,441] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'f6f58aa5ee5de0fe2243d2c20b3848964763ed0aa1917154ba91cacb8eaaa4e0', b'{"msg_id":"c3fe27b0-3ca689f2d04bdab16278977e","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:28.441393Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:28,441] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'f6f58aa5ee5de0fe2243d2c20b3848964763ed0aa1917154ba91cacb8eaaa4e0', b'{"msg_id":"c3fe27b0-3ca689f2d04bdab16278977e","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:28.441393Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"execution_state":"busy"}'] () {'copy': True}
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'f6f58aa5ee5de0fe2243d2c20b3848964763ed0aa1917154ba91cacb8eaaa4e0'
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:28.441393Z',
+ 'msg_id': 'c3fe27b0-3ca689f2d04bdab16278977e',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:28,442] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:28.439396Z',
+ 'msg_id': '748ed994-1149b7d9ac1d2b3189449051',
+ 'msg_type': 'shutdown_request',
+ 'session': '57265aca-9b0bd57b352687367a21ba33',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:28,443] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:28,443] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'busy'}
+[2019-09-14 19:49:28,443] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:28,443] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:49:28,443] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:49:28,443] INFO [ansible_kernel.kernel.do_shutdown:1164] waiting for shutdown
+[2019-09-14 19:49:28,939] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:29,444] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:49:29,445] INFO [ansible_kernel.kernel.do_shutdown:1164] waiting for shutdown
+[2019-09-14 19:49:30,445] INFO [ansible_kernel.kernel.is_ansible_alive:1140] YES
+[2019-09-14 19:49:30,445] INFO [ansible_kernel.kernel.do_shutdown:1164] waiting for shutdown
+[2019-09-14 19:49:31,220] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:31,235] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:31,249] INFO [ansible_kernel.kernel.finished_callback:1150] called
+[2019-09-14 19:49:31,451] INFO [ansible_kernel.kernel.do_shutdown:1166] shutdown complete
+[2019-09-14 19:49:31,451] INFO [ansible_kernel.kernel.stop:119] thread.stop start
+[2019-09-14 19:49:31,452] INFO [ansible_kernel.kernel.stop:124] thread.stop end
+[2019-09-14 19:49:31,453] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.shutdown', b'<IDS|MSG>', b'c543f35cb12e1915e87d45aa7338b4060ced71b623a89ecffbf9776f61e0a7e1', b'{"msg_id":"eedb209d-af55ffc689692a0acb8060c8","msg_type":"shutdown_reply","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:31.453365Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"status":"ok","restart":false}'] () {'copy': True}
+[2019-09-14 19:49:31,453] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:31,454] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.shutdown', b'<IDS|MSG>', b'c543f35cb12e1915e87d45aa7338b4060ced71b623a89ecffbf9776f61e0a7e1', b'{"msg_id":"eedb209d-af55ffc689692a0acb8060c8","msg_type":"shutdown_reply","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:31.453365Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"status":"ok","restart":false}'] () {'copy': True}
+[2019-09-14 19:49:31,454] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.shutdown'
+[2019-09-14 19:49:31,454] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:31,455] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'c543f35cb12e1915e87d45aa7338b4060ced71b623a89ecffbf9776f61e0a7e1'
+[2019-09-14 19:49:31,455] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:31.453365Z',
+ 'msg_id': 'eedb209d-af55ffc689692a0acb8060c8',
+ 'msg_type': 'shutdown_reply',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:31,455] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:28.439396Z',
+ 'msg_id': '748ed994-1149b7d9ac1d2b3189449051',
+ 'msg_type': 'shutdown_request',
+ 'session': '57265aca-9b0bd57b352687367a21ba33',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:31,456] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:31,456] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'restart': False, 'status': 'ok'}
+[2019-09-14 19:49:31,456] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:31,458] DEBUG [ansible_kernel.kernel.send_multipart:86] send_multipart [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'd740806d395d1af05ff1a9b42b804ae7151d613a006e13694c2d231464d23640', b'{"msg_id":"7c648bc0-830cae82febbe418c1f07802","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:31.457994Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:31,458] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:31,458] DEBUG [ansible_kernel.kernel.send_multipart:1233] send_multipart 7 [b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status', b'<IDS|MSG>', b'd740806d395d1af05ff1a9b42b804ae7151d613a006e13694c2d231464d23640', b'{"msg_id":"7c648bc0-830cae82febbe418c1f07802","msg_type":"status","username":"Brian","session":"4664ff90-4d6dd595df139684e29291a9","date":"2019-09-14T17:49:31.457994Z","version":"5.3"}', b'{"msg_id":"748ed994-1149b7d9ac1d2b3189449051","msg_type":"shutdown_request","username":"Brian","session":"57265aca-9b0bd57b352687367a21ba33","date":"2019-09-14T17:49:28.439396Z","version":"5.3"}', b'{}', b'{"execution_state":"idle"}'] () {'copy': True}
+[2019-09-14 19:49:31,458] DEBUG [ansible_kernel.kernel.send_multipart:1236] msg0 b'kernel.84e2def9-7542-4bc4-8194-6b6d13784519.status'
+[2019-09-14 19:49:31,458] DEBUG [ansible_kernel.kernel.send_multipart:1237] msg1 b'<IDS|MSG>'
+[2019-09-14 19:49:31,459] DEBUG [ansible_kernel.kernel.send_multipart:1238] msg2 b'd740806d395d1af05ff1a9b42b804ae7151d613a006e13694c2d231464d23640'
+[2019-09-14 19:49:31,459] DEBUG [ansible_kernel.kernel.send_multipart:1239] msg3 {'date': '2019-09-14T17:49:31.457994Z',
+ 'msg_id': '7c648bc0-830cae82febbe418c1f07802',
+ 'msg_type': 'status',
+ 'session': '4664ff90-4d6dd595df139684e29291a9',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:31,459] DEBUG [ansible_kernel.kernel.send_multipart:1240] msg4 {'date': '2019-09-14T17:49:28.439396Z',
+ 'msg_id': '748ed994-1149b7d9ac1d2b3189449051',
+ 'msg_type': 'shutdown_request',
+ 'session': '57265aca-9b0bd57b352687367a21ba33',
+ 'username': 'Brian',
+ 'version': '5.3'}
+[2019-09-14 19:49:31,459] DEBUG [ansible_kernel.kernel.send_multipart:1241] msg5 {}
+[2019-09-14 19:49:31,460] DEBUG [ansible_kernel.kernel.send_multipart:1242] msg6 {'execution_state': 'idle'}
+[2019-09-14 19:49:31,460] DEBUG [ansible_kernel.kernel.send_multipart:89] result None
+[2019-09-14 19:49:31,559] INFO [ansible_kernel.kernel.stop:119] thread.stop start
+[2019-09-14 19:49:33,940] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:38,942] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:43,948] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:48,953] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:53,955] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:49:58,957] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:03,962] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:08,963] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:13,965] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:18,966] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:23,967] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:28,969] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:33,973] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:38,974] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:43,975] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:48,976] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:53,979] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:50:58,981] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:03,986] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:08,991] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:13,994] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:18,999] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:24,003] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:29,005] INFO [ansible_kernel.kernel.cancel_callback:1146] called
+[2019-09-14 19:51:34,009] INFO [ansible_kernel.kernel.cancel_callback:1146] called
